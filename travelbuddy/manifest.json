@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "AccessAble - Inclusive Web Navigation",
+  "version": "2.0.0",
+  "description": "Comprehensive accessibility solution for web browsing",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ]
+    }
+  ]
+}

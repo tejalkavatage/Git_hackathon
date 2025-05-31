@@ -1,0 +1,24 @@
+/* Accessibility Enhancements */
+body {
+    transition: filter 0.3s ease;
+  }
+  
+  /* Improved form accessibility */
+  input:focus, 
+  textarea:focus, 
+  select:focus {
+    outline: 3px solid #4CAF50;
+  }
+  
+  /* Summary container styles */
+  #accessibility-summary {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  #accessibility-summary button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AccessAble Settings</title>
+  <style>
+    body { width: 300px; padding: 15px; }
+    .setting { margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Accessibility Settings</h2>
+  
+  <div class="setting">
+    <label>
+      <input type="checkbox" id="voiceControl"> Voice Control
+    </label>
+  </div>
+
+  <div class="setting">
+    <label>Color Blindness Mode
+      <select id="colorBlindMode">
+        <option value="none">None</option>
+        <option value="deuteranopia">Deuteranopia</option>
+        <option value="protanopia">Protanopia</option>
+        <option value="tritanopia">Tritanopia</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="setting">
+    <label>
+      <input type="checkbox" id="textToSpeech"> Text-to-Speech
+    </label>
+  </div>
+
+  <div class="setting">
+    <label>
+      <input type="checkbox" id="summarization"> Page Summarization
+    </label>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
