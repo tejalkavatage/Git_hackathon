@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voice Form Filler & Video Controls</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 320px;
+      padding: 15px;
+      background-color: #f8f9fa;
+    }
+    
+    h3 {
+      color: #333;
+      margin: 0 0 20px 0;
+      text-align: center;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
+    }
+    
+    h4 {
+      color: #555;
+      margin: 20px 0 10px 0;
+      font-size: 16px;
+    }
+    
+    button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+    
+    #voice-fill-btn {
+      background: linear-gradient(135deg, #28a745, #20c997);
+      color: white;
+      font-size: 16px;
+      padding: 15px;
+    }
+    
+    #voice-fill-btn:hover {
+      background: linear-gradient(135deg, #218838, #17a2b8);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    .video-btn {
+      background: linear-gradient(135deg, #007bff, #6610f2);
+      color: white;
+    }
+    
+    .video-btn:hover {
+      background: linear-gradient(135deg, #0056b3, #520dc2);
+      transform: translateY(-1px);
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+    
+    .feature-section {
+      background: white;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .description {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h3>🎤 Voice Form Filler & 📹 Video Controls</h3>
+
+  <div class="feature-section">
+    <h4>Voice Form Filling</h4>
+    <div class="description">Automatically fills forms using voice input with audio feedback</div>
+    <button id="voice-fill-btn">🎤 Start Voice Form Filling</button>
+  </div>
+
+  <div class="feature-section">
+    <h4>Video Controls</h4>
+    <div class="description">Control all videos on the current page</div>
+    <button data-video-command="play" class="video-btn">▶️ Play Video</button>
+    <button data-video-command="pause" class="video-btn">⏸️ Pause Video</button>
+    <button data-video-command="rewind" class="video-btn">⏪ Rewind 10s</button>
+    <button data-video-command="forward" class="video-btn">⏩ Forward 10s</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

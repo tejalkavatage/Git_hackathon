@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Voice Form Filler & Video Controls",
+  "version": "1.0",
+  "description": "Fill forms using voice input with audio feedback and control videos on any webpage",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Voice Form Filler & Video Controls"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["content.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
